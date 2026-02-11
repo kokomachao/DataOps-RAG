@@ -1,0 +1,13 @@
+# datasets / indexes (DO NOT COMMIT)
+data/raw/
+data/processed/
+storage/
+
+# caches
+__pycache__/
+*.pkl
+*.db
+
+# secrets
+.env
+.kaggle/
