@@ -1,0 +1,13 @@
+services:
+  rag-app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: rag-app
+    env_file:
+      - ../.env
+    volumes:
+      - ../storage:/app/storage
+      - ../data:/app/data
+    ports:
+      - "8000:8000"
